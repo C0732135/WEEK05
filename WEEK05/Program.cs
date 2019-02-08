@@ -3,11 +3,25 @@
 namespace WEEK05
 {
     class Program
+    
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //kkkkkkk
+            
+
         }
     }
+    class Node
+    {
+        public Node()
+        {
+       
+        }
+        Node floor;
+        Node elevatorUp;
+        string FloorNumber;
+
+    }
+    class El
 }
