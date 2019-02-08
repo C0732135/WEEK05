@@ -7,7 +7,8 @@ namespace WEEK05
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Elevator e = new Elevator();
+            e.run();
             
 
         }
