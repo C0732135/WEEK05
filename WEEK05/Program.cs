@@ -14,14 +14,27 @@ namespace WEEK05
     }
     class Node
     {
-        public Node()
-        {
-       
-        }
-        Node floor;
-        Node elevatorUp;
-        string FloorNumber;
+        public Node() { }
+       public Node floor;
+       public Node elevatorUp;
+       public string FloorNumber;
 
     }
-    class El
+    class Elevator
+    {
+        Node FirstFloor;
+        Node SecondFloor;
+        Node ThirdFloor;
+        Node FourthFloor;
+
+        public void run()
+        {
+            FirstFloor = new Node();
+            FirstFloor.FloorNumber = "First Floor";
+            Console.WriteLine("Floor number is{0}", FirstFloor.FloorNumber);
+            FirstFloor.elevatorUp = SecondFloor;
+            SecondFloor.FloorNumber = "Second Floor";
+            Console.WriteLine("Floor number is{0}", SecondFloor.FloorNumber);
+        }
+    }
 }
