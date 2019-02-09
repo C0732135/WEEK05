@@ -28,7 +28,8 @@ namespace WEEK05
         {
             DepartmentDescription = dept_name;
         }
-        public Department aDepartment;
+        public Department nextDepartment;
+        public Department previousDepartment;
        public string DepartmentDescription;
 
     }
@@ -36,17 +37,21 @@ namespace WEEK05
     {
         public void initializeDepartments()
         {
-            Department kitchenware = new Department("Kitchen ware");
             Department Books = new Department("Books");
+            Department kitchenware = new Department("Kitchen ware");
+            kitchenware.nextDepartment = Books;
+            kitchenware.previousDepartment = FirstFloor;
+            Department Books = new Department("Books");
+
         }
     }
     class Elevator
     {
-        Node FirstFloor;
-        Node SecondFloor;
-        Node ThirdFloor;
-        Node FourthFloor;
-        Node Head;
+      public  static Node FirstFloor;
+      public static Node SecondFloor;
+      public  static Node ThirdFloor;
+       public static Node FourthFloor;
+      public  static Node Head;
 
         public void setup()
         {
