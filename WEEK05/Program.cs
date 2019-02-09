@@ -24,7 +24,21 @@ namespace WEEK05
     }
     class Department
     {
-        public Department aDepartment; 
+        public Department(string dept_name)
+        {
+            DepartmentDescription = dept_name;
+        }
+        public Department aDepartment;
+       public string DepartmentDescription;
+
+    }
+    class DepartmentStore
+    {
+        public void initializeDepartments()
+        {
+            Department kitchenware = new Department("Kitchen ware");
+            Department Books = new Department("Books");
+        }
     }
     class Elevator
     {
