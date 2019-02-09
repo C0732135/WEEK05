@@ -8,7 +8,7 @@ namespace WEEK05
         static void Main(string[] args)
         {
             Elevator e = new Elevator();
-            e.run();
+            e.setup();
             
 
         }
@@ -27,8 +27,9 @@ namespace WEEK05
         Node SecondFloor;
         Node ThirdFloor;
         Node FourthFloor;
+        Node Head;
 
-        public void run()
+        public void setup()
         {
             FirstFloor = new Node();//memory allocation
             SecondFloor = new Node();
@@ -51,6 +52,13 @@ namespace WEEK05
 
             FourthFloor.elevatorUp = null;
            
+        }
+        public void traverselist()
+        {
+            while (true)
+            {
+
+            }
         }
     }
 }
